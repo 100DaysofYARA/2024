@@ -1,4 +1,4 @@
-# 100 Days of Yara Challenge - fr0gger
+# 100 Days of Yara Challenge - [@fr0gger_](https://twitter.com/fr0gger_)
 
 Welcome to my GitHub page for the **100 Days of Yara** challenge! This is where you can track my progress and updates.
 
