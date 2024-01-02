@@ -3,8 +3,8 @@ rule TTP_lang_nim {
         author = "@captainGeech42"
         description = "Look for binaries written in Nim."
         date = "2024-01-01"
-		version = "1"
-		DaysofYARA = "1/100"
+        version = "1"
+        DaysofYARA = "1/100"
     strings:
         $s1 = "NimMainModule"
         $s2 = "cmdLine"

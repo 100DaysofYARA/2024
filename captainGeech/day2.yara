@@ -8,8 +8,8 @@ rule TTP_lang_go {
         author = "@captainGeech42"
         description = "Look for binaries written in Go based on section/segment names or strings. Requires the `macho` module."
         date = "2024-01-02"
-		version = "1"
-		DaysofYARA = "2/100"
+        version = "1"
+        DaysofYARA = "2/100"
 
     strings:
         $s1 = " Go build ID: "
