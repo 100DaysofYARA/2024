@@ -1,8 +1,10 @@
 rule TTP_lang_nim {
     meta:
         author = "@captainGeech42"
+        description = "Look for binaries written in Nim."
         date = "2024-01-01"
-        desc = "Look for binaries written in Nim."
+		version = "1"
+		DaysofYARA = "1/100"
     strings:
         $s1 = "NimMainModule"
         $s2 = "cmdLine"
@@ -12,5 +14,5 @@ rule TTP_lang_nim {
         $s6 = ".nim"
         $s7 = "dotdotat"
     condition:
-        ($s1 or $s5) and (5 of them)
+        ($s1 or $s5) and ($5 of them)
 }
