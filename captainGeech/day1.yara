@@ -14,5 +14,5 @@ rule TTP_lang_nim {
         $s6 = ".nim"
         $s7 = "dotdotat"
     condition:
-        ($s1 or $s5) and ($5 of them)
+        ($s1 or $s5) and (5 of them)
 }
