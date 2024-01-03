@@ -19,3 +19,19 @@ rule file_elf_header {
     condition:
         uint32(0) == 0x464c457f
 }
+
+rule file_macho_header {
+    meta:
+        description = "Matches Mach-O file headers as uint32"
+        last_modified = "2024-01-03"
+        author = "@petermstewart"
+        DaysofYara = "3/100"
+
+    condition:
+        uint32(0) == 0xfeedface or  //MH_MAGIC
+        uint32(0) == 0xcefaedfe or  //MH_CIGAM
+        uint32(0) == 0xfeedfacf or  //MH_MAGIC_64
+        uint32(0) == 0xcffaedfe or  //MH_CIGAM_64
+        uint32(0) == 0xcafebabe or  //FAT_MAGIC
+        uint32(0) == 0xbebafeca     //FAT_CIGAM
+}
