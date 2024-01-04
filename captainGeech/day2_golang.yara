@@ -40,11 +40,11 @@ rule TTP_lang_go {
         ) or (
             (
                 uint32(0) == 0xfeedface or // Mach-O MH_MAGIC
-		        uint32(0) == 0xcefaedfe or // Mach-O MH_CIGAM
-		        uint32(0) == 0xfeedfacf or // Mach-O MH_MAGIC_64
-		        uint32(0) == 0xcffaedfe or // Mach-O MH_CIGAM_64
-		        uint32(0) == 0xcafebabe or // Mach-O FAT_MAGIC
-		        uint32(0) == 0xbebafeca    // Mach-O FAT_CIGAM
+                uint32(0) == 0xcefaedfe or // Mach-O MH_CIGAM
+                uint32(0) == 0xfeedfacf or // Mach-O MH_MAGIC_64
+                uint32(0) == 0xcffaedfe or // Mach-O MH_CIGAM_64
+                uint32(0) == 0xcafebabe or // Mach-O FAT_MAGIC
+                uint32(0) == 0xbebafeca    // Mach-O FAT_CIGAM
             ) and (
                 (
                     for any segment in macho.segments : (
