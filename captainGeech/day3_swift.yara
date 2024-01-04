@@ -6,7 +6,7 @@ import "macho"
 rule TTP_lang_swift {
     meta:
         author = "@captainGeech42"
-        description = "Look for Mach-O binaries written in Swift based on symbols or imports."
+        description = "Look for binaries written in Swift based on symbols or imports."
         date = "2024-01-03"
         version = "1"
         DaysofYARA = "3/100"
