@@ -41,7 +41,7 @@ rule TTP_lang_swift {
                             section.sectname == "__swift_hooks"
                         )
                     )
-                ) and
+                ) or
                 for any dylib in macho.dylibs : (
                     dylib.name endswith "libswiftCore.dylib"
                 )
