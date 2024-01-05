@@ -1,6 +1,6 @@
-rule RemcosRat_LNK_File {
+rule LNK_File_CheckAV {
     meta:
-        description = "Check LNK delivering RemcosRAT"
+        description = "Check LNK file checking for Defender installed. Domain used with RemcosRat delivery"
         author = "Thomas Roccia | @fr0gger_"
         reference = "https://www.uptycs.com/blog/remcos-rat-uac-0500-pipe-method"
         sample = "f650a9f1930e55e405d7121c56b90a996ab213a05b772a8f02ceb1cdbeb91165"
