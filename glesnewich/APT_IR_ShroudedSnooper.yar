@@ -7,6 +7,7 @@ rule APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect
 		description = "track ShroudedSnooper toolset based on repeated XOR encoded .data section "
 		date = "2023-10-02"
 		version = "1.0"
+		DaysofYARA = "7/100"
 		HTTPSnoop_hash = "3875ed58c0d42e05c83843b32ed33d6ba5e94e18ffe8fb1bf34fd7dedf3f82a7"
 		HTTPSnoop_hash = "7495c1ea421063845eb8f4599a1c17c105f700ca0671ca874c5aa5aef3764c1c"
 		HTTPSnoop_hash = "c5b4542d61af74cf7454d7f1c8d96218d709de38f94ccfa7c16b15f726dc08c0"
