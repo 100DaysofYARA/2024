@@ -1,4 +1,3 @@
-
 import "magic"
 rule INFO_MZ_FILE {
 	meta:
@@ -20,5 +19,5 @@ rule INFO_MZ_FILE {
 		hash = "e0215d156d2dc59b6259fd5ff792dc740626c8fa"
 		hash = "aebff5134e07a1586b911271a49702c8623b8ac8da2c135d4d3b0145a826f507"
   condition:
-    (magic.type() contains "PE32 executable" or (magic.type() contains "PE32+ executable" or uint16(0) == 0x5a4d)
+    (magic.type() contains "PE32 executable" or magic.type() contains "PE32+ executable" or uint16(0) == 0x5a4d)
 }
