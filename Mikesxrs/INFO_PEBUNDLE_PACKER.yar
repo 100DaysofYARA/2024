@@ -15,9 +15,9 @@ rule INFO_PEBUNDLE_PACKER {
 		actor_type = "N/A"
 		actor = "N/A"
 		report = "https://www.hexacorn.com/blog/2016/12/15/pe-section-names-re-visited/"
-		hash = ""
-		hash = ""
-		hash = ""
+		hash = "6f1dfd1d01d868bdce1566e4593a5a36"
+		hash = "f77dee085637e35ab8f8240f1169a8ae67d95fdb"
+		hash = "481966d0c2f96a1c74b1f7e46aa4b040087cb38307f737dc15563a44bd64f0ad"
   condition:
   	uint16(0) == 0x5a4d and for any i in (0 .. pe.number_of_sections) : (
             (
