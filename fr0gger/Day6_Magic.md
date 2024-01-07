@@ -1,0 +1,25 @@
+# List of Magic Numbers that can be used for Yara Rules
+
+- **pe**: `uint16(0) == 0x5a4d`
+- **lnk**: `uint16(0) == 0x004c`
+- **doc, ppt, xls**: `uint32be(0) == 0xd0cf11e0`
+- **elf**: `uint16(0) == 0x457f`
+- **macho2**: `uint32(0) == 0xfeedface`
+- **macho64**: `uint32(0) == 0xfeedfacf`
+- **macho64_2**: `uint32(0) == 0xcefaedfe`
+- **macho64_3**: `uint32(0) == 0xcffaedfe`
+- **rtf**: `uint32(0) == 0x74725C7B`
+- **mime**: `uint32be(0) == 0x4d494d45`
+- **pdf**: `uint32(0) == 0x25504446`
+- **zip**: `uint32(0) == 0x04034b50`
+- **rar**: `uint32(0) == 0x52617221`
+- **gzip**: `uint16(0) == 0x1f8b`
+- **pkzip**: `uint32be(0) == 0x504b0304`
+- **7zip**: `uint32(0) == 0x377abcaf`
+- **tar**: `uint32(0) == 0x75737461`
+- **iso**: `uint32(32769) == 0x43443030`
+- **sqlite**: `uint32(0) == 0x53514c69`
+- **pcap**: `uint32(0) == 0xa1b2c3d4`
+- **pcapng**: `uint32(0) == 0x0a0d0d0a`
+- **png**: `uint32(0) == 0x89504e47`
+- **xlsx**: `uint32(0) == 0x504b0304`

@@ -6,7 +6,7 @@ rule Hunting_Triangledb_Strdec {
         version = "1"
         DaysofYARA = "5/100"
         reference = "https://securelist.com/triangledb-triangulation-implant/110050/"
-        hash = " fd9e97cfb55f9cfb5d3e1388f712edd952d902f23a583826ebe55e9e322f730f "
+        hash = "fd9e97cfb55f9cfb5d3e1388f712edd952d902f23a583826ebe55e9e322f730f"
     strings:
         // xor logic
         $c1 = {
