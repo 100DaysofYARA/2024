@@ -1,9 +1,3 @@
-/* 
-  Edit the following template with your own data 
-  or copy paste your own rule! Then click on "check rule"
-  to verify if your rule is valid.
-*/
-
 import "pe"
 import "hash"
 rule RichHash_Hunting
