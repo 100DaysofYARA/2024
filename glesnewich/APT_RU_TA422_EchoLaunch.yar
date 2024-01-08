@@ -27,6 +27,6 @@ rule APT_RU_TA422_EchoLaunch
 	condition:
 		uint32be(0x0) == 0x40656368 and
 		uint32be(filesize - 4) == 0x69740d0a and
-		filesize < 3000
+		filesize < 3000 and 
 		9 of them
 }
