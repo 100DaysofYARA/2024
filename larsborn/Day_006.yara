@@ -1,6 +1,6 @@
 import "pe"
 
-rule PEResourceWithBae64EncodedZip {
+rule PEResourceWithBase64EncodedZip {
     meta:
         description = "A resource in a PE file starting with a base64 encoded ZIP file"
         author = "@larsborn"
