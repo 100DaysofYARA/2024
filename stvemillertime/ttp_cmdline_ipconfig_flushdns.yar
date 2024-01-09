@@ -92,7 +92,6 @@ rule ttp_cmdline_ipconfig_flushdns_mixbag_2 {
         $FLUSHDNS_reverse = "SNDHSULF" nocase
         $FLUSHDNS_hex_enc_str = "464c555348444e53" nocase
         $FLUSHDNS_decimal = "70 76 85 83 72 68 78 83" nocase
-        $FLUSHDNS_fallchill = "FLUSHDNS" nocase
         $FLUSHDNS_stackpush = "hHDNShFLUS" nocase
         $FLUSHDNS_stackpushnull = "hHDNS\x00hFLUS" nocase
         $FLUSHDNS_stackpushdoublenull = "hHDNS\x00\x00hFLUS" nocase
