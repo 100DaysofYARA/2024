@@ -2,9 +2,9 @@ rule Hunting_pwntools {
     meta:
         author = "@captainGeech42"
         description = "Hunt for pwntools-based exploit scripts"
-        date = "2024-01-11"
+        date = "2024-01-12"
         version = "1"
-        DaysofYARA = "11/100"
+        DaysofYARA = "12/100"
     strings:
         $imp1 = "import pwn" fullword
         $imp2 = "from pwn import *" fullword
