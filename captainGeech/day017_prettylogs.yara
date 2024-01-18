@@ -13,7 +13,7 @@ rule Hunting_exploit_logs {
 
         $s1 = "offset" ascii wide nocase fullword
         $s2 = "addr" ascii wide nocase fullword
-        $s3 = "addr" ascii wide nocase fullword
+        $s3 = "address" ascii wide nocase fullword
         $s4 = "leak" ascii wide nocase fullword
         $s5 = "target" ascii wide nocase fullword
     condition:
