@@ -4,8 +4,8 @@ rule ttp_toolmark_mobile_net_num_str_1 {
 	meta:
 		author = "stvemillertime"
         desc = "look for executables with mobile network number strings"
-        ref = "22e05ebb06947af2236f57432f06bd94c1eb4e76472ccaf3ee40335383a30815"
-        ref = "ed5d29a19f3aed2c870051d639b974f16682a2463fd20bd230594102c39958dd"
+        ref = "d5e59be8ad9418bebca786b3a0a681f7e97ea6374f379b0c4352fee1219b3c29"
+        ref = "13e457ce16c0fe24ad0f4fe41a6ad251ebffb2fdaaebe7df094d7852ba0cfdc6"
 	strings:
         $a1 = /[^A-Za-z]IMEI(:|=|\x20\x00|_)/ 
         $a2 = /[^A-Za-z]IMSI(:|=|\x20|\x00|_)/ 
