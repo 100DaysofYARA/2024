@@ -7,10 +7,10 @@ rule ttp_toolmark_mobile_net_num_str_1 {
         ref = "d5e59be8ad9418bebca786b3a0a681f7e97ea6374f379b0c4352fee1219b3c29"
         ref = "13e457ce16c0fe24ad0f4fe41a6ad251ebffb2fdaaebe7df094d7852ba0cfdc6"
 	strings:
-        $a1 = /[^A-Za-z]IMEI(:|=|\x20\x00|_)/ 
-        $a2 = /[^A-Za-z]IMSI(:|=|\x20|\x00|_)/ 
-        $a3 = /[^A-Za-z]MSISDN(:|=|\x20|\x00|_)/ 
-        $a4 = /[^A-Za-z]ICCID(:|=|\x20|\x00|_)/  
+        $a1 = /[^A-Za-z]IMEI[^A-Za-z]/ 
+        $a2 = /[^A-Za-z]IMSI[^A-Za-z]/ 
+        $a3 = /[^A-Za-z]MSISDN[^A-Za-z]/ 
+        $a4 = /[^A-Za-z]ICCID[^A-Za-z]/  
         $z1 = "WiFiNetworkManager.dll" //windows stuff
         $z2 = "WWANSVC.DLL" //??
         $z3 = "NetworkMobileSettings.dll" //win
