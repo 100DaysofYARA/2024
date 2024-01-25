@@ -2,7 +2,7 @@
 rule SUSP_LoadLibraryA_mutation_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -15,7 +15,7 @@ rule SUSP_LoadLibraryA_mutation_b64 {
 rule SUSP_LoadLibraryA_mutation_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -28,7 +28,7 @@ rule SUSP_LoadLibraryA_mutation_xor {
 rule SUSP_LoadLibraryA_mutation_flipflop {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -41,7 +41,7 @@ rule SUSP_LoadLibraryA_mutation_flipflop {
 rule SUSP_LoadLibraryA_mutation_flipflop_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -54,7 +54,7 @@ rule SUSP_LoadLibraryA_mutation_flipflop_b64 {
 rule SUSP_LoadLibraryA_mutation_flipflop_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -67,7 +67,7 @@ rule SUSP_LoadLibraryA_mutation_flipflop_xor {
 rule SUSP_LoadLibraryA_mutation_rot13 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -80,7 +80,7 @@ rule SUSP_LoadLibraryA_mutation_rot13 {
 rule SUSP_LoadLibraryA_mutation_rot13_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -93,7 +93,7 @@ rule SUSP_LoadLibraryA_mutation_rot13_b64 {
 rule SUSP_LoadLibraryA_mutation_rot13_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -106,7 +106,7 @@ rule SUSP_LoadLibraryA_mutation_rot13_xor {
 rule SUSP_LoadLibraryA_mutation_reverse {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -119,7 +119,7 @@ rule SUSP_LoadLibraryA_mutation_reverse {
 rule SUSP_LoadLibraryA_mutation_reverse_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -132,7 +132,7 @@ rule SUSP_LoadLibraryA_mutation_reverse_b64 {
 rule SUSP_LoadLibraryA_mutation_reverse_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -145,7 +145,7 @@ rule SUSP_LoadLibraryA_mutation_reverse_xor {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -158,7 +158,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -171,7 +171,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_b64 {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -184,7 +184,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_xor {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_spaces {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -197,7 +197,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_spaces {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_spaces_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -210,7 +210,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_spaces_b64 {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_spaces_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -223,7 +223,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_spaces_xor {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_commas {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -236,7 +236,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_commas {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_commas_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -249,7 +249,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_commas_b64 {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_commas_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -262,7 +262,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_commas_xor {
 rule SUSP_LoadLibraryA_mutation_double_hex_enc_str {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -275,7 +275,7 @@ rule SUSP_LoadLibraryA_mutation_double_hex_enc_str {
 rule SUSP_LoadLibraryA_mutation_double_hex_enc_str_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -288,7 +288,7 @@ rule SUSP_LoadLibraryA_mutation_double_hex_enc_str_b64 {
 rule SUSP_LoadLibraryA_mutation_double_hex_enc_str_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -301,7 +301,7 @@ rule SUSP_LoadLibraryA_mutation_double_hex_enc_str_xor {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_b64_enc_str {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -314,7 +314,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_b64_enc_str {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_b64_enc_str_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -327,7 +327,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_b64_enc_str_b64 {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_b64_enc_str_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -340,7 +340,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_b64_enc_str_xor {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_reversed {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -353,7 +353,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_reversed {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_reversed_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -366,7 +366,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_reversed_b64 {
 rule SUSP_LoadLibraryA_mutation_hex_enc_str_reversed_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -379,7 +379,7 @@ rule SUSP_LoadLibraryA_mutation_hex_enc_str_reversed_xor {
 rule SUSP_LoadLibraryA_mutation_decimal {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -392,7 +392,7 @@ rule SUSP_LoadLibraryA_mutation_decimal {
 rule SUSP_LoadLibraryA_mutation_decimal_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -405,7 +405,7 @@ rule SUSP_LoadLibraryA_mutation_decimal_b64 {
 rule SUSP_LoadLibraryA_mutation_decimal_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -418,7 +418,7 @@ rule SUSP_LoadLibraryA_mutation_decimal_xor {
 rule SUSP_LoadLibraryA_mutation_decimal_commas {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -431,7 +431,7 @@ rule SUSP_LoadLibraryA_mutation_decimal_commas {
 rule SUSP_LoadLibraryA_mutation_decimal_commas_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -444,7 +444,7 @@ rule SUSP_LoadLibraryA_mutation_decimal_commas_b64 {
 rule SUSP_LoadLibraryA_mutation_decimal_commas_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -457,7 +457,7 @@ rule SUSP_LoadLibraryA_mutation_decimal_commas_xor {
 rule SUSP_LoadLibraryA_mutation_fallchill {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -470,7 +470,7 @@ rule SUSP_LoadLibraryA_mutation_fallchill {
 rule SUSP_LoadLibraryA_mutation_fallchill_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -483,7 +483,7 @@ rule SUSP_LoadLibraryA_mutation_fallchill_b64 {
 rule SUSP_LoadLibraryA_mutation_fallchill_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -496,7 +496,7 @@ rule SUSP_LoadLibraryA_mutation_fallchill_xor {
 rule SUSP_LoadLibraryA_mutation_stackpush {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -509,7 +509,7 @@ rule SUSP_LoadLibraryA_mutation_stackpush {
 rule SUSP_LoadLibraryA_mutation_stackpush_b64 {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -522,7 +522,7 @@ rule SUSP_LoadLibraryA_mutation_stackpush_b64 {
 rule SUSP_LoadLibraryA_mutation_stackpush_xor {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -535,7 +535,7 @@ rule SUSP_LoadLibraryA_mutation_stackpush_xor {
 rule SUSP_LoadLibraryA_mutation_stackpushnull {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
@@ -548,7 +548,7 @@ rule SUSP_LoadLibraryA_mutation_stackpushnull {
 rule SUSP_LoadLibraryA_mutation_stackpushdoublenull {
 	meta:
 		author = "Greg Lesnewich"
-		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional APT_IR_ShroudedSnooper_XORd_Config_In_Data_Sect"
+		description = "track string mutations of LoadLibraryA which is commonly used to resolve additional apis"
 		date = "2024-01-25"
 		version = "1.0"
 		DaysofYARA = "25/100"
