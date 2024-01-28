@@ -1,4 +1,4 @@
-rule Day_10 {
+rule RarArchive {
     meta:
         description = "RAR archive"
         author = "@larsborn"
