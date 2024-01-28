@@ -6,8 +6,8 @@ rule ttp_lib_openssl_no_version_str_unsigned : ttp {
         // most legit and non-obfuscated binaries that use openssl libraries have the plaintext version string
         // figured id look for unsigned pes that have *some* openssl string, but without the common version strings
         ref = "47dc997d08d53e55b8450940d9de94e2b5db631e" //attor
-        ref = "941be28004afc2c7c8248a86b5857a35ab303beb33c704640852741b925558a1" //yorotrooper
-        ref = "582cd41417aeb2f3f86d2c9fb7f8add4e5edacfed7cae0aecc8cb088a823d240" //kasperagent?
+        ref = "941be28004afc2c7c8248a86b5857a35ab303beb33c704640852741b925558a1" 
+        ref = "582cd41417aeb2f3f86d2c9fb7f8add4e5edacfed7cae0aecc8cb088a823d240" 
     strings:
         $s = "openssl" nocase ascii
         // $s = /\x00[\x01-\x7f]{,500}OpenSSL[\x01-\x7f]{,500}\x00/ ascii // use this when testing or printing strings
