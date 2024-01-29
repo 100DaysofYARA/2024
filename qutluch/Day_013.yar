@@ -1,5 +1,3 @@
-import "elf"
-
 rule HUNT_ELF_NPS_PROXY_CLIENT_1
 {
 
@@ -24,14 +22,6 @@ rule HUNT_ELF_NPS_PROXY_CLIENT_1
 
     condition:
         uint32(0) == 0x464c457f
-        and 10 of them
-        and
-        (
-            for all i in (0..elf.number_of_segments-1):
-            (
-                elf.segments[i].type != elf.PT_DYNAMIC
-                and
-                elf.segments[i].type != elf.PT_INTERP
-            )
-        )
+        and 5 of them
+        and for 3 of them : ( # > 11 )
 }
