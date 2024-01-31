@@ -19,7 +19,6 @@ rule SUSP_PEDLL_ASP_WEBSHELL_1
 
     strings:
         $sa1    = "exec_code" wide
-        $sa2    = "End" wide
         $ha1    = { // Performance is for loosers.
             02      // IL_0012: ldarg.0
 			6F[4]   // IL_0013: callvirt  instance class [Microsoft.JScript]Microsoft.JScript.Vsa.VsaEngine [Microsoft.JScript]Microsoft.JScript.INeedEngine::GetEngine()
