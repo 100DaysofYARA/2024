@@ -1,3 +1,19 @@
+rule SUSP_Obfuscated_Powershell_Casing_Anomaly {
+  meta:
+    author = "Greg Lesnewich"
+    description = "look for obfsucated powershell strings obfuscated via casing anomalies"
+    date = "2024-01-31"
+    version = "1.0"
+    DaysOfYara = "32/100"
+  strings:
+    $case1 = "Powershell" nocase ascii wide
+    $case2 = "powershell" nocase ascii wide
+    $legit1 = "powershell" ascii wide
+    $legit2 = "Powershell" ascii wide
+  condition:
+    none of ($legit*) and any of ($case*)
+}
+
 rule SUSP_Obfuscated_Powershell_b64 {
   meta:
     author = "Greg Lesnewich"
@@ -6,9 +22,12 @@ rule SUSP_Obfuscated_Powershell_b64 {
     version = "1.0"
     DaysOfYara = "32/100"
   strings:
-    $powershell_b64 = "powershell" base64 base64wide
+    $ = "powershell" base64 base64wide
+    $ = "Powershell" base64 base64wide
+    $ = "PowerShell" base64 base64wide
+    $ = "POWERSHELL" base64 base64wide
   condition:
-    all of them
+    any of them
 }
 
 rule SUSP_Obfuscated_Powershell_xor {
@@ -19,7 +38,10 @@ rule SUSP_Obfuscated_Powershell_xor {
     version = "1.0"
     DaysOfYara = "32/100"
   strings:
-    $powershell_xor = "powershell" xor(0x01-0xff) ascii wide
+    $ = "powershell" xor(0x01-0xff) ascii wide 
+    $ = "Powershell" xor(0x01-0xff) ascii wide 
+    $ = "PowerShell" xor(0x01-0xff) ascii wide 
+    $ = "POWERSHELL" xor(0x01-0xff) ascii wide
   condition:
     all of them
 }
@@ -594,21 +616,4 @@ rule SUSP_Obfuscated_Powershell_url_encoded_xor {
     $powershell_url_encoded_xor = "70%6f%77%65%72%73%68%65%6c%6c" xor(0x01-0xff) ascii wide
   condition:
     all of them
-}
-
-
-rule SUSP_Obfuscated_Powershell_Casing_Anomaly {
-  meta:
-    author = "Greg Lesnewich"
-    description = "look for obfsucated powershell strings obfuscated via casing anomalies"
-    date = "2024-01-31"
-    version = "1.0"
-    DaysOfYara = "32/100"
-  strings:
-    $case1 = "Powershell" nocase ascii wide
-    $case2 = "powershell" nocase ascii wide
-    $legit1 = "powershell" ascii wide
-    $legit2 = "Powershell" ascii wide
-  condition:
-    none of ($legit*) and any of ($case*)
 }
