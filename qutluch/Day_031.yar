@@ -1,4 +1,4 @@
-import"pe"
+import "pe"
 
 rule SUSP_PE_DRIVER_SIGNED_SIZE_1
 {
