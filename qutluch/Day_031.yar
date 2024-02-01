@@ -21,7 +21,7 @@ rule SUSP_PE_DRIVER_SIGNED_SIZE_1
         and (uint32(uint32(0x3C)) == 0x00004550)
         and uint16(uint32(0x3C)+0x5C) == 0x0001
         and pe.number_of_signatures > 0
-		and for any sig in pe.signatures: (
+        and for any sig in pe.signatures: (
             sig.subject == "/C=CN/ST=\xE9\x87\x8D\xE5\xBA\x86/L=\xE9\x87\x8D\xE5\xBA\x86/O=\xE9\x87\x8D\xE5\xBA\x86\xE8\xB2\x94\xE8\xB5\x91\xE8\xB2\x85\xE8\xBD\xAF\xE4\xBB\xB6\xE7\xA7\x91\xE6\x8A\x80\xE5\xB7\xA5\xE4\xBD\x9C\xE5\xAE\xA4"
         )
 }
