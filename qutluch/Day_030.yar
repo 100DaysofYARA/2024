@@ -1,6 +1,6 @@
 import "elf"
 
-rule HUNT_ELF_FREEBSD_RUST_KERNEL_MODULE_1
+rule HUNT_ELF_FREEBSD_GOLANG_KERNEL_MODULE_1
 {
     meta:
         author      = "@qutluch@infosec.exchange"
@@ -25,7 +25,9 @@ rule HUNT_ELF_FREEBSD_RUST_KERNEL_MODULE_1
         $f1     = "module_register_init"
 
     condition:
-        uint32(0) == 0x464c457f and
+        uint32(0) == 0x464c457f
+        and uint16(0x7) == 0x9
+        and
         (
             for any section in elf.sections : (
                 section.name == ".gopclntab" or section.name == ".go.buildinfo"
