@@ -24,4 +24,5 @@ rule APT_EQGRP_1
         and (uint32(uint32(0x3C)) == 0x00004550)
         and uint16(uint32(0x3C)+0x18) == 0x10b
         and all of them
+        and filesize < 1MB
 }
