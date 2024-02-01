@@ -13,7 +13,7 @@ rule SUSP_PE_DRIVER_SIGNED_SIZE_1
         date        = "2024-01-27"
         version     = "1.0"
 
-        hash = "821e9fe79677dfd89ae5b54e4a14444bbad6c4977d945da68cabf9b421524972"
+        hash        = "821e9fe79677dfd89ae5b54e4a14444bbad6c4977d945da68cabf9b421524972"
 
     condition:
         filesize < 50KB
