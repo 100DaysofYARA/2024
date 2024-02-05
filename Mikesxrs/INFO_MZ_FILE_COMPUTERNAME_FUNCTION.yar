@@ -22,6 +22,8 @@ rule INFO_MZ_FILE_COMPUTERNAME_FUNCTION{
 	strings:
 		$STR1 = "GetComputerNameA" ascii wide 
 		$STR2 = "GetComputerNameW" ascii wide  
+		$STR3 = "GetComputerNameExA" ascii wide 
+		$STR4 = "GetComputerNameExA" ascii wide 
 	condition:
 		(magic.type() contains "PE32 executable" or magic.type() contains "PE32+ executable" or uint16(0) == 0x5a4d) and any of them
 }
