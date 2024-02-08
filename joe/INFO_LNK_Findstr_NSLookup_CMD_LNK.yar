@@ -5,7 +5,7 @@ rule INFO_LNK_Findstr_NSLookup_CMD_LNK
         description = "Identify LNK files that contain findstr, nslookup, and .cmd"
         date = "2024-02-08"
         version = "1.0"
-        hash1 = "37f0cd954554e4bd3b766c79f6224c03dbcfbb4c0f23ac1f48292ce88d2dc767"
+        hash1 = "37f0cd954554e4bd3b766c79f6224c03dbcfbb4c0f23ac1f48292ce88d2dc767"
         DaysOfYara = "39/100"
 
     strings:
