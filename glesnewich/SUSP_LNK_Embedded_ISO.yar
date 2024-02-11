@@ -11,7 +11,7 @@ rule SUSP_LNK_Embedded_ISO_FileHeader
 	condition:
 		uint32be(0x0) == 0x4c000000 and
 		uint32be(0x8001) == 0x43443030 and
-        uint32be(0x8002) == 0x44303031  //CD001
+        	uint32be(0x8002) == 0x44303031  //CD001
 }
 
 rule SUSP_LNK_Embedded_ISO_NSRO_FileHeader
