@@ -68,3 +68,24 @@ rule file_zip {
         $central_directory_header and
         $end_of_central_directory
 }
+
+rule file_zip_password_protected {
+    meta:
+        description = "Finds files that look like password-protected ZIP archives"
+        last_modified = "2024-02-13"
+        author = "@petermstewart"
+        DaysofYara = "44/100"
+        ref = "https://en.wikipedia.org/wiki/ZIP_(file_format)"
+        ref = "https://twitter.com/tylabs/status/1366728540683599878"
+
+    strings:
+        $local_file_header = { 50 4b 03 04 }
+        $central_directory_header = { 50 4b 01 02 }
+        $end_of_central_directory = { 50 4b 05 06 }
+        
+    condition:
+        $local_file_header at 0 and
+        uint16(6) & 0x1 == 0x1 and //Check the general purpose bit flag in the local file header
+        $central_directory_header and
+        $end_of_central_directory
+}
