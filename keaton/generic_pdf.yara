@@ -23,7 +23,7 @@ rule pdf_comment_present
         $pdf = {25 50 44 46 2d}
     condition:
         $pdf at 0 and 
-        uint8(8) == 0x0d
+        uint8(9) != 0x31
 }
 
 rule pdf_comment_present_stringless
@@ -38,3 +38,16 @@ rule pdf_comment_present_stringless
         uint32be(1) == 0x5044462d and 
         uint8(8) == 0x0d
 }
+
+rule pdf_print_version
+{
+    meta:
+        author = "kyle eaton"
+        date = "02/13/2024"
+        day = "4/100"
+    condition:
+        uint32be(0) == 0x25504446 and
+        console.hex("PDF VERSION:", uint32be(5))
+
+}
+
