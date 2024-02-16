@@ -1,7 +1,7 @@
 import "pe"
 
 rule APT_RU_Turla_TinyTurlaNG_RichHeader {
-		meta:
+    meta:
         description = "track TinyTurlaNG based build artifacts & ServiceDLL components"
         author = "Greg Lesnewich"
         date = "2024-02-15"
