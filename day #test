@@ -1,0 +1,7 @@
+rule Testing_day { 
+  strings: 
+          s1 = // just a test
+
+  condition: 
+          s1
+}
