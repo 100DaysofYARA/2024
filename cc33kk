@@ -1,4 +1,7 @@
-hello
-yara
-rules
-day100
+rule testing { 
+      strings: 
+              s1
+      condition: 
+              s1
+}
+
