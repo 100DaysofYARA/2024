@@ -1,0 +1,4 @@
+rule xx {
+meta:
+main file = "main file" 
+  }

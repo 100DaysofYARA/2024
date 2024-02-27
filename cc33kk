@@ -1,7 +1,0 @@
-rule testing { 
-      strings: 
-              s1
-      condition: 
-              s1
-}
-
