@@ -3,7 +3,7 @@ rule AndroidKotlinDebugProbesKt {
         description = "Kotlin artifact needed to enable the builtin support for coroutines debugger in IDEA (DebugProbesKt.bin)"
         author = "@larsborn"
         date = "2024-02-18"
-        reference = "TODO"
+        reference = "https://github.com/Kotlin/kotlinx.coroutines/issues/2274"
         example_hash = "158a19eb94aa2f3e2f459db69ee10276c73b945dd6c5f8fc223cf2d85e2b5e33"
 
         DaysofYARA = "25/100"
