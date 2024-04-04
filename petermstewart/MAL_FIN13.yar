@@ -56,3 +56,24 @@ rule MAL_FIN13_LATCHKEY {
         uint16(0) == 0x5a4d and
         all of them
 }
+
+rule MAL_FIN13_PORTHOLE {
+    meta:
+        description = "Matches strings found in PORTHOLE Java network scanner used by FIN13 (AKA: ElephantBeetle, SQUAB SPIDER)"
+        last_modified = "2024-04-04"
+        author = "@petermstewart"
+        DaysofYara = "95/100"
+        sha256 = "84ac021af9675763af11c955f294db98aeeb08afeacd17e71fb33d8d185feed5"
+        sha256 = "61257b4ef15e20aa9407592e25a513ffde7aba2f323c2a47afbc3e588fc5fcaf"
+        ref = "https://www.mandiant.com/resources/blog/fin13-cybercriminal-mexico"
+
+    strings:
+        $a1 = "IpExtender.class"
+        $a2 = "PortScanner.class"
+        $a3 = "ObserverNotifier.class"
+
+    condition:
+        filesize < 20KB and
+        uint16(0) == 0x4b50 and
+        all of them
+}
