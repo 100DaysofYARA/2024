@@ -100,3 +100,24 @@ rule MAL_FIN13_CLOSEWATCH {
         filesize < 20KB and
         6 of them
 }
+
+rule MAL_FIN13_NIGHTJAR {
+    meta:
+        description = "Matches strings found in NIGHTJAR file upload tool used by FIN13 (AKA: ElephantBeetle, SQUAB SPIDER)"
+        last_modified = "2024-04-06"
+        author = "@petermstewart"
+        DaysofYara = "97/100"
+        sha256 = "5ece301c0e0295b511f4def643bf6c01129803bac52b032bb19d1e91c679cacb"
+        ref = "https://www.mandiant.com/resources/blog/fin13-cybercriminal-mexico"
+
+    strings:
+        $a1 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLConnection.class"
+        $a2 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLStreamHandler.class"
+        $a3 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLStreamHandlerFactory.class"
+        $a4 = "FileTransferClient.class"
+
+    condition:
+        filesize < 15KB and
+        uint16(0) == 0x4b50 and
+        all of them
+}
