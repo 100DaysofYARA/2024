@@ -143,3 +143,25 @@ rule MAL_FIN13_SIXPACK {
         1 of ($a*) and
         all of ($b*)
 }
+
+rule MAL_FIN13_SWEARJAR {
+    meta:
+        description = "Matches strings found in SWEARJAR cross-platform backdoor used by FIN13 (AKA: ElephantBeetle, SQUAB SPIDER)"
+        last_modified = "2024-04-08"
+        author = "@petermstewart"
+        DaysofYara = "99/100"
+        sha256 = "e76e0a692be03fdc5b12483b7e1bd6abd46ad88167cd6b6a88f6185ed58c8841"
+        sha256 = "2f23224937ac723f58e4036eaf1ee766b95ebcbe5b6a27633b5c0efcd314ce36"
+        ref = "https://www.mandiant.com/resources/blog/fin13-cybercriminal-mexico"
+
+    strings:
+        $a1 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLConnection.class"
+        $a2 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLStreamHandler.class"
+        $a3 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLStreamHandlerFactory.class"
+        $a4 = "bankcard.class"
+
+    condition:
+        filesize < 20KB and
+        uint16(0) == 0x4b50 and
+        all of them
+}
