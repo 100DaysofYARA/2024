@@ -165,3 +165,27 @@ rule MAL_FIN13_SWEARJAR {
         uint16(0) == 0x4b50 and
         all of them
 }
+
+rule MAL_FIN13_MAILSLOT {
+    meta:
+        description = "Matches strings found in MAILSLOT SMTP/POP C2 used by FIN13 (AKA: ElephantBeetle, SQUAB SPIDER)"
+        last_modified = "2024-04-09"
+        author = "@petermstewart"
+        DaysofYara = "100/100"
+        sha256 = "5e59b103bccf5cad21dde116c71e4261f26c2f02ed1af35c0a17218b4423a638"
+        ref = "https://www.mandiant.com/resources/blog/fin13-cybercriminal-mexico"
+
+    strings:
+        $a1 = "%ws%\\uhost.exe" wide
+        $a2 = "reg add %ws /v Uhost /t REG_SZ /d \"%ws\" /f" wide
+        $a3 = "netsh advfirewall firewall add rule name=\"Uhost\"" wide
+        $a4 = "profile=domain,private,public protocol=any enable=yes DIR=Out program=\"%ws\" Action=Allow" wide
+        $b1 = "name=\"smime.p7s\"%s"
+        $b2 = "Content-Transfer-Encoding: base64%s"
+        $b3 = "Content-Disposition: attachment;"
+        $b4 = "Content-Type: %smime;"
+
+    condition:
+        uint16(0) == 0x5a4d and
+        all of them
+}
