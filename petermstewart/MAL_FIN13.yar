@@ -121,3 +121,71 @@ rule MAL_FIN13_NIGHTJAR {
         uint16(0) == 0x4b50 and
         all of them
 }
+
+rule MAL_FIN13_SIXPACK {
+    meta:
+        description = "Matches strings found in SIXPACK ASPX webshell/tunneler used by FIN13 (AKA: ElephantBeetle, SQUAB SPIDER)"
+        last_modified = "2024-04-07"
+        author = "@petermstewart"
+        DaysofYara = "98/100"
+        sha256 = "a3676562571f48c269027a069ecb08ee08973b7017f4965fa36a8fa34a18134e"
+        ref = "https://www.mandiant.com/resources/blog/fin13-cybercriminal-mexico"
+
+    strings:
+        $a1 = "Sending a packs..."
+        $a2 = "Sending a pack..."
+        $b1 = "nvc[\"host\"]"
+        $b2 = "nvc[\"port\"]"
+        $b3 = "nvc[\"timeout\"]"
+
+    condition:
+        filesize < 15KB and
+        1 of ($a*) and
+        all of ($b*)
+}
+
+rule MAL_FIN13_SWEARJAR {
+    meta:
+        description = "Matches strings found in SWEARJAR cross-platform backdoor used by FIN13 (AKA: ElephantBeetle, SQUAB SPIDER)"
+        last_modified = "2024-04-08"
+        author = "@petermstewart"
+        DaysofYara = "99/100"
+        sha256 = "e76e0a692be03fdc5b12483b7e1bd6abd46ad88167cd6b6a88f6185ed58c8841"
+        sha256 = "2f23224937ac723f58e4036eaf1ee766b95ebcbe5b6a27633b5c0efcd314ce36"
+        ref = "https://www.mandiant.com/resources/blog/fin13-cybercriminal-mexico"
+
+    strings:
+        $a1 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLConnection.class"
+        $a2 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLStreamHandler.class"
+        $a3 = "org/eclipse/jdt/internal/jarinjarloader/RsrcURLStreamHandlerFactory.class"
+        $a4 = "bankcard.class"
+
+    condition:
+        filesize < 20KB and
+        uint16(0) == 0x4b50 and
+        all of them
+}
+
+rule MAL_FIN13_MAILSLOT {
+    meta:
+        description = "Matches strings found in MAILSLOT SMTP/POP C2 used by FIN13 (AKA: ElephantBeetle, SQUAB SPIDER)"
+        last_modified = "2024-04-09"
+        author = "@petermstewart"
+        DaysofYara = "100/100"
+        sha256 = "5e59b103bccf5cad21dde116c71e4261f26c2f02ed1af35c0a17218b4423a638"
+        ref = "https://www.mandiant.com/resources/blog/fin13-cybercriminal-mexico"
+
+    strings:
+        $a1 = "%ws%\\uhost.exe" wide
+        $a2 = "reg add %ws /v Uhost /t REG_SZ /d \"%ws\" /f" wide
+        $a3 = "netsh advfirewall firewall add rule name=\"Uhost\"" wide
+        $a4 = "profile=domain,private,public protocol=any enable=yes DIR=Out program=\"%ws\" Action=Allow" wide
+        $b1 = "name=\"smime.p7s\"%s"
+        $b2 = "Content-Transfer-Encoding: base64%s"
+        $b3 = "Content-Disposition: attachment;"
+        $b4 = "Content-Type: %smime;"
+
+    condition:
+        uint16(0) == 0x5a4d and
+        all of them
+}
